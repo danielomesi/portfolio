@@ -5,17 +5,16 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-function openModal() {
-  document.getElementById('videoModal').style.display = 'flex';
+function openModal(videoSrc) {
+  var videoElement = document.getElementById('demoVideo');
+  var sourceElement = document.getElementById('videoSource');
+  sourceElement.src = videoSrc;
+  videoElement.load(); // Reload the video to apply the new source
+  document.getElementById('videoModal').style.display = 'block';
 }
 
-// Function to close the modal
 function closeModal() {
-  const modal = document.getElementById('videoModal');
-  modal.style.display = 'none';
-  const video = document.getElementById('demoVideo');
-  video.pause();
-  video.currentTime = 0;
+  document.getElementById('videoModal').style.display = 'none';
 }
 
 // Close modal when clicking outside of the modal content

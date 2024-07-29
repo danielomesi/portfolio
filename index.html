@@ -266,7 +266,7 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse My Recent GUI</p>
       <h1 class="title">Projects</h1>
       <div class="skills-details-container">
         <div class="about-containers">
@@ -289,7 +289,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="openModal('./assets/check.mp4')"
+                onclick="openModal('./assets/project 1 demo.mp4')"
               >
                 Live Demo
               </button>
@@ -313,7 +313,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="openModal('./assets/project 2 demo.mp4')"
               >
                 Live Demo
               </button>
@@ -331,15 +331,9 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/danielomesi/Signals-Manipulation'"
+                onclick="location.href='https://github.com/danielomesi/ApiDesktopApp'"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
@@ -400,9 +394,10 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
       <video id="demoVideo" controls>
-        <source src="./assets/check.mp4" type="video/mp4">
+        <source id="videoSource" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
+</div>
   </div>
 </html>
