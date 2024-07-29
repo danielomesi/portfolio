@@ -30,7 +30,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -289,7 +289,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="openModal('./assets/check.mp4')"
               >
                 Live Demo
               </button>
@@ -327,7 +327,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Signals Manipulation</h2>
+            <h2 class="skills-sub-title project-title">Flights Data Rest API</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -396,4 +396,13 @@
     </footer>
     <script src="script.js"></script>
   </body>
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <video id="demoVideo" controls>
+        <source src="./assets/check.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
 </html>
