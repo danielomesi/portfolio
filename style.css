@@ -335,24 +335,25 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
+  align-items: center;
   gap: 0.5rem;
 }
 
 article .icon {
-  cursor: default;
+  height: 2rem; /* Set a fixed height for the icons */
+  flex-shrink: 0; /* Prevent icons from shrinking */
 }
 
+article div {
+  line-height: 1.2; /* Ensure consistent text spacing */
+}
 /* PROJECTS SECTION */
 
 #projects {
@@ -419,6 +420,26 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+@media (max-width: 600px) {
+  .contact-info-upper-container {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .contact-info-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 10px; 
+  }
+  
+  .contact-info-container img {
+    margin-right: 10px; 
+  }
+}
+
+
 
 /* FOOTER SECTION */
 
