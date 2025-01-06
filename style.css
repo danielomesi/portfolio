@@ -499,3 +499,57 @@ footer p {
   cursor: pointer;
 }
 
+#leetcode {
+  position: relative;
+  text-align: center;
+}
+
+/* Video Carousel Container */
+.video-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Video container with the arrows positioned next to it */
+.video-container {
+  display: flex;
+  align-items: center; /* Vertically center the video and arrows */
+  position: relative;
+}
+
+/* Styling for the arrows */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.left-arrow {
+  margin-right: 10px; /* Adjust space between the left arrow and the video */
+}
+
+.right-arrow {
+  margin-left: 10px; /* Adjust space between the right arrow and the video */
+}
+
+/* Video Styling */
+video {
+  width: 1000px; /* Adjust the video size */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Video Title */
+#videoTitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+
