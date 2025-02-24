@@ -58,5 +58,5 @@ function setVideo() {
 }
 
 window.onload = function() {
-    setVideo()
+    
 };
