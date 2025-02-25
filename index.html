@@ -238,9 +238,63 @@
   />
 </section>
 
+<section id="projects">
+  <p class="section__text__p1">Check Out My</p>
+  <h1 class="title">Projects</h1>
 
 
-    <section id="projects">
+  <div class="slider-container details-container">
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    
+    <div class="slider">
+
+      <div class="slide">
+        <h2 class="skills-sub-title project-title">Shticell</h2>
+        <p>Built a client-server app implementing a spreadsheet engine with user management, cell operations, and permissions.</p>
+        <p><strong>Technologies Used:</strong> Java, Tomcat</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/danielomesi/Sheet-Cell'">
+            Github
+          </button>
+        </div>
+      </div>
+      
+      <div class="slide">
+        <h2 class="skills-sub-title project-title">Facebook Desktop App in WinForms</h2>
+        <p>Developed a WinForms C# app using the Facebook API with features like login, home feed, album viewing, AI-powered rephrasing, and usage tracking.</p>
+        <p><strong>Technologies Used:</strong> C#, Facebook API, XML Serialization, Paraphrase Genius API</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/danielomesi/Facebook-Desktop-App'">
+            Github
+          </button>
+        </div>
+      </div>
+
+      <div class="slide">
+        <h2 class="skills-sub-title project-title">Reversed Tic Tac Toe</h2>
+        <p>A twist on the classic Tic Tac Toe game where players aim to create a sequence of their symbol to lose. Features customizable board sizes and options for single-player or two-player modes.</p>
+        <p><strong>Technologies Used:</strong> C#</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/danielomesi/CSharp-Course/tree/main/Reversed%20Tic%20Tac%20Toe'">
+            Github
+          </button>
+        </div>
+      </div>
+
+      
+    </div>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+
+    <!-- <section id="projects">
       <p class="section__text__p1">Browse My Recent GUI</p>
       <h1 class="title">Projects</h1>
       <div class="skills-details-container">
@@ -300,7 +354,7 @@
         class="icon arrow"
         onclick="location.href='./#leetcode'"
       />
-    </section>
+    </section> -->
     
 
     <!--
