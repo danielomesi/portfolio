@@ -1,471 +1,157 @@
+<!-- Link for interacting with editor:  -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Daniel Omesi">
-    <meta name="email" content="omesidaniel@gmail.com">
-     <!-- Keywords -->
-     <meta name="keywords" content="daniel, omesi, web development, programming, software engineering, portfolio, projects, HTML, CSS, JavaScript">
-     <!-- Social Media -->
-     <meta property="og:title" content="Daniel Omesi - Portfolio">
-     <meta property="og:description" content="Daniel Omesi's portfolio showcases my projects and skills as a software engineer. I am actively seeking a software engineering position where I can apply my expertise in software development, problem-solving, and innovative solutions. Explore my work and connect with me!">
-     <meta property="og:image" content="./assets/site-logo.jpg">
-     <meta property="og:url" content="https://danielomesi.github.io/portfolio/">
-    <title>Daniel Omesi - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Daniel Omesi</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Daniel Omesi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Daniel Omesi profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Daniel Omesi</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Daniel Omesi CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/daniel-omesi/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/danielomesi'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/personal-interests.png"
-                alt="Personal Interests icon"
-                class="icon"
-              />
-              <h3>Personal Interests</h3>
-              <p>Sports<br />Music</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. in Computer Science<br />2021-2025<br />The Academic College of Tel Aviv-Yafo</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a quick learner and adapt well to new challenges. I'm excited to contribute to a team while continuing to grow. I'm looking for a job where I can apply my coding skills and make an impact.
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Daniel Omesi" />
+        <meta name="keywords" content="portfolio, software engineer, Daniel Omesi, fullstack, web development" />
+        <title>Daniel Omesi - Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
+    <body>
+        <nav class="container-fluid">
+            <ul>
+                <li><strong>Daniel Omesi</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" role="button">Contact</a></li>
+            </ul>
+        </nav>
 
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#skills'"
-      />
-    </section>
+        <header class="hero">
+            <h1>Hi, I'm Daniel Omesi</h1>
+            <h3>Software Engineer | Full Stack Developer</h3>
+            <p>Focused on building scalable, maintainable software solutions</p>
+            <a href="./assets/Daniel Omesi CV.pdf" target="_blank" class="cv-download">View CV</a>
+        </header>
 
+        <main class="container">
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>
+                    I'm a full-stack developer with a passion for building real-world solutions, from backend systems to dynamic UIs. I’ve worked with Java, C#, Python, JavaScript, React, Node.js,
+                    .NET, and Docker. I’ve completed my Computer Science studies at the Academic College of Tel Aviv-Yafo and am just wrapping up my final project. Now I'm looking for a full-time
+                    software engineering role where I can keep growing and building.
+                </p>
+            </section>
 
- <section id="skills">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skills</h1>
-  <div class="skills-details-container">
-    <div class="about-containers">
-      
-      <div class="details-container">
-        <h2 class="skills-sub-title">Languages</h2>
-        <div class="article-container">
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Java</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C#</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>TypeScript</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C++</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C</h3></div></article>
-        </div>
-      </div>
-      
-      
-      <div class="details-container">
-        <h2 class="skills-sub-title">Frameworks & Libraries</h2>
-        <div class="article-container">
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>React</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node.js</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>.NET</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Express</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Socket.IO</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaFX</h3></div></article>
-        </div>
-      </div>
-      
-      
-      <div class="details-container">
-        <h2 class="skills-sub-title">Tools & Platforms</h2>
-        <div class="article-container">
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Docker</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Linux</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>VS Code</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>IntelliJ</h3></div></article>
-          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Visual Studio</h3></div></article>
-        </div>
-      </div>
-      
-      
-      
-    </div>
-  </div>
-  
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#leetcode'"
-  />
-</section>
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Java, C#, C++, C</li>
+                            <li>JavaScript, Python, TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Frameworks & Libraries</h3>
+                        <ul>
+                            <li>React, Node.js, .NET, Express</li>
+                            <li>Socket.IO, JavaFX</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Tools & Platforms</h3>
+                        <ul>
+                            <li>Docker, Git, Linux</li>
+                            <li>VS Code, IntelliJ, Visual Studio</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solver</li>
+                            <li>Fast Learner</li>
+                            <li>Team Player</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-<section id="projects">
-  <p class="section__text__p1">Check Out My</p>
-  <h1 class="title">Projects</h1>
+            <section id="projects" class="section projects">
+                <h2>Projects</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Shticell</h3>
+                        <p>Built a client-server app implementing a spreadsheet engine with user management, cell operations, and permissions.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> Java, Tomcat</div>
+                        <a href="https://github.com/danielomesi/Sheet-Cell" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>Facebook Desktop App</h3>
+                        <p>Developed a WinForms C# app using the Facebook API with features like login, home feed, album viewing, AI-powered rephrasing, and usage tracking.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> C#, Facebook API, XML Serialization, Paraphrase Genius API</div>
+                        <a href="https://github.com/danielomesi/Facebook-Desktop-App" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>NNR Classifier</h3>
+                        <p>Implemented a Nearest Neighbors in Radius (NNR) classifier with data processing, feature scaling, radius selection, and accuracy evaluation.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> Python, NumPy, Pandas, Scikit-learn</div>
+                        <a href="https://github.com/danielomesi/Machine-Learning-With-Python/tree/main/NNR%20Classifier" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>Non-Blocking Multi-Client HTTP Server</h3>
+                        <p>Lightweight non-blocking HTTP server supporting multiple clients using select() and handling various HTTP methods without multi-threading.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> C, select(), Event-driven programming</div>
+                        <a href="https://github.com/danielomesi/Computer-Communication" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>Garage Management System</h3>
+                        <p>Built a C# app to manage vehicle entries, statuses, and fuel/electric operations using OOP and the Factory Design Pattern.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> C# (.NET), OOP Principles, Factory Design Pattern</div>
+                        <a href="https://github.com/danielomesi/CSharp-Projects/tree/main/Garage%20System" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>MainMenu Project</h3>
+                        <p>Console-based component for managing hierarchical menus, supporting user input and menu actions via interfaces and delegates.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> C# (.NET Framework), Polymorphism, Interfaces, Delegates</div>
+                        <a href="https://github.com/danielomesi/CSharp-Projects/tree/main/Menus%20System" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>Flight Data Service (Containerized)</h3>
+                        <p>Containerized flight data service with client/server architecture using Docker and named pipes for inter-container communication.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> Docker, Linux, Command-Line Interface, Client/Server Architecture</div>
+                        <a href="https://github.com/danielomesi/Linux-Project-Flights-API" target="_blank">GitHub ↗</a>
+                    </div>
+                    <div class="card">
+                        <h3>Social Media App</h3>
+                        <p>Console-based C++ app for user interaction, statuses (including images/videos), and friendship/fan page management, with file-based persistence.</p>
+                        <div class="tech-stack"><strong>Tech Stack:</strong> C++, Object-Oriented Programming (OOP)</div>
+                        <a href="https://github.com/danielomesi/Social-Network-in-CPP" target="_blank">GitHub ↗</a>
+                    </div>
+                </div>
+            </section>
 
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:omesidaniel@gmail.com">omesidaniel@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/972533039096" target="_blank">Send WhatsApp Message</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/daniel-omesi" target="_blank">Connect on LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-  <div class="slider-container details-container">
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    
-    <div class="slider">
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Shticell</h2>
-        <p>Built a client-server app implementing a spreadsheet engine with user management, cell operations, and permissions.</p>
-        <p><strong>Technologies Used:</strong> Java, Tomcat</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/Sheet-Cell','_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-      
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Facebook Desktop App in WinForms</h2>
-        <p>Developed a WinForms C# app using the Facebook API with features like login, home feed, album viewing, AI-powered rephrasing, and usage tracking.</p>
-        <p><strong>Technologies Used:</strong> C#, Facebook API, XML Serialization, Paraphrase Genius API</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/Facebook-Desktop-App', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">NNR Classifier</h2>
-        <p>Implemented a Nearest Neighbors in Radius (NNR) classifier, a variation of KNN where classification is based on neighbors within a fixed radius. The project includes data processing, feature scaling, radius selection, and evaluation of classification accuracy.</p>
-        <p><strong>Technologies Used:</strong> Python, NumPy, Pandas, Scikit-learn</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/Machine-Learning-With-Python/tree/main/NNR%20Classifier', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-      
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Non-Blocking Multi-Client HTTP Server</h2>
-        <p>Implemented a lightweight non-blocking HTTP server that supports multiple clients using select(). It handles various HTTP methods efficiently without multi-threading.</p>
-        <p><strong>Technologies Used:</strong> C, select(), Event-driven programming</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/Computer-Communication', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Garage Management System</h2>
-        <p>Built a Garage Management System in C# designed to manage different types of vehicles, including adding new vehicles, changing statuses, and handling refueling or recharging operations.</p>
-        <p><strong>Technologies Used:</strong> C# (.NET), OOP Principles, Factory Design Pattern</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/CSharp-Projects/tree/main/Garage%20System', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-      
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">MainMenu Project</h2>
-        <p>Implemented a software component for managing hierarchical menus in a Console application, allowing developers to create menus with submenus, handle user input, and perform actions based on menu choices.</p>
-        <p><strong>Technologies Used:</strong> C# (.NET Framework), Polymorphism, Interfaces, Delegates</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/CSharp-Projects/tree/main/Menus%20System', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Flight Data Service (Containerized)</h2>
-        <p>Developed a flight data service with a client/server architecture, fully containerized with Docker for seamless deployment. The service provides real-time flight information for airports and aircrafts, using named pipes for communication between containers.</p>
-        <p><strong>Technologies Used:</strong> Docker, Linux, Command-Line Interface, Client/Server Architecture</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/Linux-Project-Flights-API', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Social Media App</h2>
-        <p>Developed a console-based social media application in C++ that allows users to interact, add statuses, manage friendships, and follow fan pages. All data is saved to a text file, with support for media types like images and videos in statuses.</p>
-        <p><strong>Technologies Used:</strong> C++, Object-Oriented Programming (OOP)</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/Social-Network-in-CPP', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-      
-      
-      
-
-      <div class="slide">
-        <h2 class="skills-sub-title project-title">Reversed Tic Tac Toe</h2>
-        <p>A twist on the classic Tic Tac Toe game where players aim to create a sequence of their symbol to lose. Features customizable board sizes and options for single-player or two-player modes.</p>
-        <p><strong>Technologies Used:</strong> C#</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('https://github.com/danielomesi/CSharp-Course/tree/main/Reversed%20Tic%20Tac%20Toe', '_blank')">
-            Github
-          </button>
-        </div>
-      </div>
-
-      
-    </div>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
-  </div>
-</section>
-
-
-
-
-
-    <!-- <section id="projects">
-      <p class="section__text__p1">Browse My Recent GUI</p>
-      <h1 class="title">Projects</h1>
-      <div class="skills-details-container">
-        <div class="about-containers">
-          
-          <div class="details-container">
-            <div class="article-container">
-              <h2 class="skills-sub-title project-title">Facebook Desktop App in WinForms</h2>
-              <p>Developed a WinForms C# app using the Facebook API with features like login, home feed, album viewing, AI-powered rephrasing, and usage tracking.</p>
-              <p><strong>Technologies Used:</strong> C#, Facebook API, XML Serialization, Paraphrase Genius API</p>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/danielomesi/Facebook-Desktop-App'">
-                  Github
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <div class="details-container">
-            <div class="article-container">
-              <h2 class="skills-sub-title project-title">Reversed Tic Tac Toe</h2>
-              <p>A twist on the classic Tic Tac Toe game where players aim to create a sequence of their symbol to lose. Features customizable board sizes and options for single-player or two-player modes.</p>
-              <p><strong>Technologies Used:</strong> C#</p>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/danielomesi/CSharp-Course/tree/main/Reversed%20Tic%20Tac%20Toe'">
-                  Github
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <div class="details-container">
-            <div class="article-container">
-              <h2 class="skills-sub-title project-title">Shticell</h2>
-              <p>Built a client-server app implementing a spreadsheet engine with user management, cell operations, and permissions.</p>
-              <p><strong>Technologies Used:</strong> Java, Tomcat</p>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/danielomesi/Sheet-Cell'">
-                  Github
-                </button>
-              </div>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-      
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#leetcode'"
-      />
-    </section> -->
-    
-
-    <!--
-
-    <section id="leetcode">
-      <p class="section__text__p1">Check Out My LeetCode Solutions</p>
-      <h1 class="title">LeetCode</h1>
-    
-      
-      <div class="video-carousel">
-        <div class="video-container">
-          <button class="arrow left-arrow" onclick="changeVideo('prev')">&#8592;</button>
-          <video id="videoPlayer" controls>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <button class="arrow right-arrow" onclick="changeVideo('next')">&#8594;</button>
-        </div>
-        <p id="videoTitle"></p>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-  -->
-    
-    
-    
-  
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:omesidaniel@gmail.com">omesidaniel@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/daniel-omesi/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/whatsapp.png"
-            alt="WhatsApp icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://api.whatsapp.com/send?phone=972533039096">053-303-9096</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
-  <div id="videoModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <video id="demoVideo" controls>
-        <source id="videoSource" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-</div>
-  </div>
+        <footer class="container">
+            <small> © 2025 Daniel Omesi </small>
+        </footer>
+    </body>
 </html>
